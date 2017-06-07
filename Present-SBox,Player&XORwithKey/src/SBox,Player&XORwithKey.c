@@ -49,16 +49,16 @@ unsigned long long int pblock(unsigned long long int input,unsigned long long in
    /*      64 bit         128 bit
     *        |             |
              +-------------|
-			 |             |
+	     |             |
          ----------     ----------------
         |   S_BOX  |    |    Key       |
-		|	P_BOX  |    |              |
-		 ----------	    |   Scheduling |
-		                ----------------
+	|   P_BOX  |    |              |
+	 ----------	|  Scheduling  |
+	     |           ----------------
              |             |
-			 |             |
-			 +-------------|
-			 |                                                      */
+	     |             |
+	     +-------------|
+	     |                                                      */
 
 int main(void) {
 	unsigned long long int k[] = { 0x1111222233334444, 0x1111111155555555 };
